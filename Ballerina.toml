@@ -1,0 +1,7 @@
+[package]
+org = "chiranfernando"
+name = "currency_value_finder"
+version = "0.1.0"
+
+[build-options]
+observabilityIncluded = true
