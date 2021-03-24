@@ -3,7 +3,7 @@ import ballerina/http;
 
 http:Client currencyConvertEndpoint = check new("https://free.currconv.com/api/v7/convert");
 
-# Description
+# Finds convertion rate between the currencies
 #
 # + 'from - Currency to be converted from
 # + to - Parameter Description
@@ -35,8 +35,8 @@ function rate(Currency 'from, Currency to, string apiKey) returns decimal {
 }
 
 
-# Retruns a invocable url accepted by currency convert api in format of 
-# https://free.currconv.com/api/v7/convert?q=`toCurrency`_`fromCurrency`&compact=ultra&apiKey=<KEY>
+# Retruns an invokable url accepted by currency convert api in format of 
+# https://free.currconv.com/api/v7/convert?q=`toCurrency`_`fromCurrency`&compact=ultra&apiKey=`apiKey`
 # 
 # + toCurrency - Currecy to be converted to
 # + fromCurrency - Currency to be converted from

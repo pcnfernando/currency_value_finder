@@ -23,6 +23,10 @@ public function main() {
     io:println("Most valuable currency is " + findMaxValuedCurrency(vals));
 }
 
+# Finds the maximum valued currency
+#
+# + values - Currency conversion rate map
+# + return - Return maximum valued currency key
 function findMaxValuedCurrency(map<decimal> values) returns string {
     string maxKey = EUR;
 
